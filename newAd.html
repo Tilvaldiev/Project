@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Create Advertisement</title>
+    <title>KuProday</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+
     <header>
       <div class="navigation">
         <div> <a id="kuproday" href="MainPage.html">KuProday</a></div>
@@ -31,17 +32,60 @@
             </div>
         </div>
         <div class="search">
-          <input type="text" name="search" placeholder="Search..." />
+          <input type="search" name="search" placeholder="Search..." />
           <input type="button" name="searchButton" />
         </div>
 
         <div class="createAd">
-          <div class="createAd">
-            <a target="_blank" href="newAd.html">Create Ad</a>
+          <a target="_blank" href="newAd.html">Create Ad</a>
         </div>
       </div>
 
     </header>
 
+    <section>
+      <div class="newAd">
+        <div class="chooseImg">
+          <img src="images/choose.png" height="170px" width="170px"><br>
+          <input type="button" name="chooseImg" value="Choose Image">
+        </div>
+        <div class="adDescription">
+          <label for="title">Title</label><br>
+          <input type="text" required="required" name="title"><br>
+          <label for="price">Price</label><br>
+          <input type="number" required="required"  name="price">
+          <label for="price">kzt</label><br>
+          <label for="description">Description</label><br>
+          <textarea name="description" rows="8" cols="69"></textarea> <br>
+          <label for="addresss">City</label><br>
+          <input type="text" required="required"  name="address" ><br>
+          <label for="phoneNumber">Phone</label><br>
+          <input type="number" required="required"  name="phoneNumber"><br>
+          <input type="submit" name="submit" value="Submit"><br>
+        </div>
+      </div>
+    </section>
+
+
+    <footer>
+      <div class="footer">
+        <div class="footerInformation">
+          <a href="#"><img src="images/home.png" width="25px" height="32px" style="vertical-align:middle"> Home</a>
+          <a href="#"><img src="images/question.png" width="25px" height="25px" style="vertical-align:middle"> About</a>
+          <a href="#"><img src="images/contact.png" width="25px" height="25px" style="vertical-align:middle"> Contacts</a>
+
+        </div>
+        <div class="footerInformation">
+            <a href="#"><img src="images/phone.png" width="25px" height="25px" style="vertical-align:middle"> + 7 778 662 4414</a>
+            <a href="#"><img src="images/email.png" width="25px" height="25px" style="vertical-align:middle"> tilvaldiyev@gmail.com</a>
+        </div>
+        <div class="footerInformation social" >
+          <a href="#"><img src="images/instagram.png" width="30px" height="30px"></a>
+          <a href="#"><img src="images/telegram.png" width="30px" height="30px"></a>
+          <a href="#"><img src="images/twitter.png" width="30px" height="30px"></a>
+          <a href="#"><img src="images/facebook.png" width="30px" height="30px"></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

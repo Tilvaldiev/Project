@@ -94,22 +94,24 @@
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
-input[type=text]{
+input[type=search]{
   width: 220px;
-  height: 30px;
+  height: 36px;
 }
 input[name=searchButton]{
   width: 40px;
-  height: 40px;
+  height: 35px;
   border: none;
   background-color: rgb(50,50,50);
   color: white;
   border-radius: 0 5px 5px 0;
-  background-image: url('searchicon.png');
+  background-image: url('images/searchicon.png');
   background-position: 5px 5px;
   background-repeat: no-repeat;
   background-size: 27px;
-  margin-left: -20px;
+  margin-left: -25px;
+  margin-bottom: -12px;
+
   cursor: pointer;
 }
 input[name=searchButton]:hover{
@@ -137,4 +139,104 @@ input[name=searchButton]:hover{
 }
 .createAd a:hover{
   background-color: black;
+}
+
+.vipAds{
+  width: 100%;
+  height: 200px;
+  border: 1px solid red;
+}
+
+.ads{
+  width: 100%;
+  height: 500px;
+  border: 1px solid red;
+  margin-top: 20px;
+}
+
+.footer{
+  width: 100%;
+  height: 250px;
+  background-color: rgb(240,240,240);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerInformation{
+  width: 300px;
+  height: 150px;
+}
+
+.footerInformation a{
+  font-size: 14px;
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+.social a{
+  display: inline-block;
+}
+
+.footerInformation img{
+  margin: 10px;
+  margin-right: 5px;
+  margin-left: 15px;
+}
+
+.footerInformation a:hover{
+  color: blue;
+}
+
+.newAd{
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+}
+
+.chooseImg{
+  margin-right: 50px;
+  text-align: center;
+}
+
+
+
+.newAd input[type="text"], input[type="number"]{
+  width: 500px;
+  height: 25px;
+  margin-top: 5px;
+  margin-bottom: 25px;
+}
+textarea{
+  margin-top: 5px;
+  margin-bottom: 25px;
+  resize: vertical;
+}
+
+.newAd input[name="description"]{
+  width: 500px;
+  height: 70px;
+}
+
+.newAd input[type="number"]{
+  width: 250px;
+}
+.newAd input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.newAd input[type="button"], input[type="submit"]{
+  width: 130px;
+  height: 30px;
+  border: none;
+  background-color: rgb(50,50,50);
+  color: white;
+  border-radius: 5px;
+}
+
+.newAd input[type="button"]:hover, input[type="submit"]:hover{
+  background-color: black;
+  cursor: pointer;
 }
