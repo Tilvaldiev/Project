@@ -2,14 +2,13 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>KuProday</title>
+    <title>Electronics</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-
     <header>
       <div class="navigation">
-        <div> <a id="kuproday" href="MainPage.html">KuProday</a></div>
+        <div  id="kuproday"> <a href="MainPage.html">KuProday</a></div>
         <div class="navSecondColumn">
             <div class="aboutUs">
               <a href="MainPage.html">Home</a>
@@ -18,11 +17,11 @@
             <div class="dropdown">
                 <button id="dropbtn" type="button" name="button">Category</button>
                 <div class="dropdown-content">
-                  <a href="#">Electronics</a>
-                  <a href="#">Furnitures</a>
-                  <a href="#">Realties</a>
-                  <a href="#">Clothes</a>
-                  <a href="#">Transports</a>
+                  <a href="electronics.html">Electronics</a>
+                  <a href="furnitures.html">Furnitures</a>
+                  <a href="realties.html">Realties</a>
+                  <a href="clothes.html">Clothes</a>
+                  <a href="transport.html">Transports</a>
                 </div>
             </div>
         </div>
@@ -33,46 +32,48 @@
           </form>
         </div>
         <div class="createAd">
-          <a href="newAd.html">Create Ad</a>
+          <a target="_blank" href="newAd.html">Create Ad</a>
         </div>
       </div>
 
     </header>
 
     <section>
-      <div class="newAd">
-        <div class="chooseImg">
-          <img src="images/choose.png" height="170px" width="170px"><br>
-          <input type="button" name="chooseImg" value="Choose Image">
+    <div class="aboutProduct">
+      <div class="productFlex">
+        <div id="bigImage">
+        <img src="products/iphone.jpg" width="500px" height="350px;"/>
         </div>
-        <div class="adDescription">
-          <form action="index.html" method="post">
-            <label for="title">Title</label><br>
-            <input type="text" required="required" name="title"><br>
-            <label for="category">Category</label><br>
-            <select name="category">
-              <option disabled selected>Select</option>
-              <option>Electronics</option>
-              <option>Furnitures</option>
-              <option>Realties</option>
-              <option>Clothes</option>
-              <option>Transports</option>
-            </select><br>
-            <label for="price">Price</label><br>
-            <input type="number" required="required"  name="price">
-            <label for="price">kzt</label><br>
-            <label for="description">Description</label><br>
-            <textarea name="description" rows="8" cols="69"></textarea> <br>
-            <label for="addresss">City</label><br>
-            <input type="text" required="required"  name="address" ><br>
-            <label for="phoneNumber">Phone</label><br>
-            <input type="number" required="required"  name="phoneNumber"><br>
-            <input type="submit" name="submit" value="Submit"><br>
-          </form>
+        <div id="carousel">
+            <img id="i1" src="products/pc1.png" width="120" height="90"/>
+            <img id="i2" src="products/pc2.png" width="120" height="90"/>
+            <img id="i3" src="products/pc5.jpg" width="120" height="90"/>
+            <img id="i4" src="products/pc3.jpg" width="120" height="90"/>
         </div>
       </div>
-    </section>
+      <div class="aboutProductDescription">
+        <h2>Apple iPhone 7 64 GB, Black</h2>
+        <p id="price">130 000 ₸</p>
+        <p id="prDescription">The iPhone 7 and iPhone 7 Plus launch this
+          September represented a departure from tradition for Apple - and in many
+          ways, a risk. Instead of the usual tick-tock cycle where each ’S’
+          release is followed by a brand-new design, the new iPhone models
+          look pretty similar to their counterparts from the previous two years,
+          and sport nearly identical dimensions.
+        </p>
+        <p><strong>Display:</strong> 4.70-inch (750x1334)</p>
+        <p><strong>Processor:</strong> Apple A10 Fusion</p>
+        <p><strong>Front Camera:</strong> 7MP</p>
+        <p><strong>Rear Camera:</strong> 12MP</p>
+        <p><strong>RAM:</strong> 2GB</p>
+        <p><strong>Storage:</strong> 64GB</p>
+        <p style="margin-bottom: 30px;"><strong>OS:</strong> iOS 10</p>
+        <p style="font-size: 20px;"><strong>City:</strong> Almaty, Auezov District</p>
+        <p style="font-size: 20px;"><strong>Phone number:</strong> +7 778 665 65 65</p>
 
+      </div>
+    </div>
+    </section>
 
     <footer>
       <div class="footer">
@@ -93,5 +94,7 @@
         </div>
       </div>
     </footer>
+
+
   </body>
 </html>
