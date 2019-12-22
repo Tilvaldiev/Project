@@ -3,42 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>KuProday</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-
-    <header>
-      <div class="navigation">
-        <div id="kuproday"> <a  href="MainPage.html">KuProday</a></div>
-        <div class="navSecondColumn">
-            <div class="aboutUs">
-              <a href="MainPage.html">Home</a>
-              <a href="aboutUs.html" target="_blank">About</a>
-            </div>
-            <div class="dropdown">
-                <button id="dropbtn" type="button" name="button">Category</button>
-                <div class="dropdown-content">
-                  <a href="electronics.html" target="_blank">Electronics</a>
-                  <a href="furnitures.html" target="_blank">Furnitures</a>
-                  <a href="realties.html" target="_blank">Realties</a>
-                  <a href="clothes.html" target="_blank">Clothes</a>
-                  <a href="transport.html" target="_blank">Transports</a>
-                </div>
-            </div>
-        </div>
-        <div class="search">
-          <form action="index.html" method="post">
-            <input type="search" name="search" placeholder="Search..." />
-            <input type="button" name="searchButton"/>
-          </form>
-        </div>
-        <div class="createAd">
-          <a target="_blank" href="newAd.html">Create Ad</a>
-        </div>
-      </div>
-
-    </header>
-
+    <?php
+        include ("include/block-header.php");
+     ?>
     <section>
       <div class="ads">
         <div class="ad">
@@ -152,24 +122,8 @@
       </div>
     </section>
 
-    <footer>
-      <div class="footer">
-        <div class="footerInformation">
-          <a href="MainPage.html"><img src="images/home.png" width="25px" height="32px" style="vertical-align:middle"> Home</a>
-          <a href="aboutUs.html"><img src="images/question.png" width="25px" height="25px" style="vertical-align:middle"> About</a>
-
-        </div>
-        <div class="footerInformation">
-            <a><img src="images/phone.png" width="25px" height="25px" style="vertical-align:middle"> + 7 778 662 4414</a>
-            <a href="http:/www.gmail.com" target="_blank"><img src="images/email.png" width="25px" height="25px" style="vertical-align:middle"> tilvaldiyev@gmail.com</a>
-        </div>
-        <div class="footerInformation social" >
-          <a href="https://www.instagram.com" target="_blank"><img src="images/instagram.png" width="30px" height="30px"></a>
-          <a href="https://web.telegram.org" target="_blank"><img src="images/telegram.png" width="30px" height="30px"></a>
-          <a href="https://twitter.com/" target="_blank"><img src="images/twitter.png" width="30px" height="30px"></a>
-          <a href="https://www.facebook.com//" target="_blank"><img src="images/facebook.png" width="30px" height="30px"></a>
-        </div>
-      </div>
-    </footer>
+    <?php
+  include ("include/block-footer.php");
+     ?>
   </body>
 </html>
