@@ -1,136 +1,44 @@
+<?php
+  include ("include/db_connect.php");
+
+
+ ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>KuProday</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Kuproday</title>
+    <link rel="stylesheet" href="css/style1.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <?php
       include ("include/block-header.php");
      ?>
-    <div id="body-block">
-     <div class="vipAds">
-         <div class="VipAd">
-           <div class="vipLenta">
-             VIP
-           </div>
-           <div class="vipProductDescription">
-             <img src="products/pc.jpg" width="300" height="170">
-           </div>
-           <p style="font-size: 22px;"><strong>500 000 ₸</strong></p>
-           <a style="font-size: 21px" href="">Powerful gaming computer with 144hz monitor</a>
-         </div>
-         <div class="VipAd">
-           <div class="vipLenta">
-             VIP
-           </div>
-           <div class="vipProductDescription">
-             <img src="products/iphone.jpg" width="300" height="170">
-           </div>
-           <p style="font-size: 22px;"><strong>130 000 ₸</strong></p>
-           <a style="font-size: 21px" href="product.php">Iphone 7 64GB</a>
-         </div>
-         <div class="VipAd">
-           <div class="vipLenta">
-             VIP
-           </div>
-           <div class="vipProductDescription">
-             <img src="products/furniture.jpg" width="300" height="170">
-           </div>
-           <p style="font-size: 22px;"><strong>95 000 ₸</strong></p>
-           <a style="font-size: 21px" href="">Double bed</a>
-         </div>
-    </div>
+        <div class="ads">
 
-    <div class="ads">
-       <div class="ad">
-         <div class="ProductDescription">
-           <img src="products/shoes.jpg" width="300" height="200">
-         </div>
-         <p style="font-size: 22px;"><strong>10 000 ₸</strong></p>
-         <a style="font-size: 21px" href="">Snow boots (with delivery)</a>
-       </div>
-       <div class="ad">
-         <div class="ProductDescription">
-           <img src="products/bike.jpg" width="300" height="170">
-         </div>
-         <p style="font-size: 22px;"><strong>1 500 000 ₸</strong></p>
-         <a style="font-size: 21px" href="">Honda electric bike SurRon 5400Watt 60V</a>
-       </div>
-       <div class="ad">
-         <div class="ProductDescription">
-           <img src="products/home.jpg" width="300" height="170">
-         </div>
-         <p style="font-size: 22px;"><strong>40 000 000 ₸</strong></p>
-         <a style="font-size: 21px" href="">Сottage, 2 floors, 15 rooms with garden</a>
-       </div>
-       <div class="ad">
-         <div class="ProductDescription">
-           <img src="products/macbook.jpg" width="300" height="170">
-         </div>
-         <p style="font-size: 22px;"><strong>295 000 ₸</strong></p>
-         <a style="font-size: 21px" href="">MacBook Pro 128GB MacOS 13,3cm</a>
-       </div>
-       <div class="ad">
-         <div class="ProductDescription">
-           <img src="products/iphoneX.jpg" width="300" height="170">
-         </div>
-         <p style="font-size: 22px;"><strong>480 000 ₸</strong></p>
-         <a style="font-size: 21px" href="">Iphone X 64GB </a>
-       </div>
-       <div class="ad">
-         <div class="ProductDescription">
-           <img src="products/a7.jpg" width="300" height="170">
-         </div>
-         <p style="font-size: 22px;"><strong>170 000 ₸</strong></p>
-         <a style="font-size: 21px" href="">Samsung Galaxy A7 2018</a>
-       </div>
-       <div class="ad">
-         <div class="ProductDescription">
-           <img src="products/car.jpg" width="300" height="170">
-         </div>
-         <p style="font-size: 22px;"><strong>2 500 000 ₸</strong></p>
-         <a style="font-size: 21px" href="">Suzuki Grant Vitara, 1999y</a>
-       </div>
-       <div class="ad">
-         <div class="ProductDescription">
-           <img src="products/bycicle.jpg" width="300" height="170">
-         </div>
-         <p style="font-size: 22px;"><strong>15 000 ₸</strong></p>
-         <a style="font-size: 21px" href="">Bycicle Bipek Avto & Azia Avto</a>
-       </div>
-       <div class="ad">
-         <div class="ProductDescription">
-           <img src="products/iphone.jpg" width="300" height="170">
-         </div>
-         <p style="font-size: 22px;"><strong>130 000 ₸</strong></p>
-         <a style="font-size: 21px" href="">Iphone 7 64GB</a>
-       </div>
-       <div class="ad">
-         <div class="ProductDescription">
-           <img src="products/furniture.jpg" width="300" height="170">
-         </div>
-         <p style="font-size: 22px;"><strong>95 000 ₸</strong></p>
-         <a style="font-size: 21px" href="">Double bed</a>
-       </div>
-       <div class="ad">
-         <div class="ProductDescription">
-           <img src="products/garniture.jpg" width="300" height="170">
-         </div>
-         <p style="font-size: 22px;"><strong>40 000 ₸</strong></p>
-         <a style="font-size: 21px" href="">Kitchen Sets </a>
-       </div>
-       <div class="ad">
-         <div class="ProductDescription">
-           <img src="products/pc.jpg" width="300" height="170">
-         </div>
-         <p style="font-size: 22px;"><strong>500 000 ₸</strong></p>
-         <a style="font-size: 21px" href="">Powerful gaming computer with 144hz monitor</a>
-       </div>
-    </div>
-    </div>
+          <?php
+            $sql = "SELECT * FROM products ";
+            $result = mysqli_query($conn, $sql);
+
+            if(mysqli_num_rows($result)>0){
+              $row = mysqli_fetch_array($result);
+
+              do {
+                echo '
+                <div class="ad">
+                  <div class="ProductDescription">
+                    <img src="products/'.$row['image'].'" width="300" height="200">
+                  </div>
+                  <p style="font-size: 22px;"><strong>'.$row['price'].' ₸</strong></p>
+                  <a style="font-size: 21px" href="">'.$row['title'].'</a>
+                </div>
+                ';
+              } while ($row = mysqli_fetch_array($result));
+            }
+            ?>
+            </div>
+
 
     <?php
       include ("include/block-footer.php");
