@@ -1,0 +1,393 @@
+.navigation{
+  display: flex;
+  flex-basis: 100%;
+  height: 140px;
+  background-color: rgb(240,240,240);
+  align-items:center;
+  border-bottom: 8px solid rgb(50,50,50);
+  border-top: 8px solid rgb(50,50,50);
+}
+
+#kuproday{
+  flex: 1;
+  margin-left: 110px;
+}
+
+#kuproday a{
+  display: block;
+  font-size: 50px;
+  text-decoration: none;
+  color: rgb(50,50,50);
+  font-weight: bold;
+  font-family: purisa;
+}
+
+.navSecondColumn{
+  flex: 1;
+  display: block;
+}
+.search{
+  flex: 1;
+  flex-basis: 80px;
+  height: auto;
+}
+.createAd{
+  flex: 1;
+}
+.aboutUs a{
+  font-size: 14px;
+  text-decoration: none;
+  color: rgb(50, 50, 50);
+  margin: 5px;
+  display: inline-block;
+  width: 65px;
+  text-align: center;
+}
+.aboutUs a:hover{
+  color: black;
+  text-decoration: underline;
+}
+
+.dropdown{
+  display: inline-block;
+  margin: 8px;
+}
+.dropdown-content a{
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+
+
+
+#dropbtn{
+  background-color: rgb(50,50,50);
+  color: white;
+  padding: 13px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 7px;
+  width: 180px;
+  height: 45px;
+  font-family: helvetica;
+}
+
+input[name=q]{
+  width: 220px;
+  height: 34px;
+}
+input[name=searchButton]{
+  width: 77px;
+  padding: 9px;
+  font-size: 15px;
+  font-family: monospace;
+  text-align: right;
+  height: 40px;
+  margin-left: -5px;
+  border: none;
+  background-color: rgb(50,50,50);
+  color: white;
+  background-image: url('images/sIcon.png');
+  background-position: 5px 5px;
+  background-repeat: no-repeat;
+  background-size: 27px;
+  cursor: pointer;
+  border-radius: 0 4px 4px 0;
+}
+input[name=searchButton]:hover{
+  background-color: black;
+}
+.search{
+  margin: 30px;
+  margin-left: 60px;
+  margin-right: 60px;
+
+}
+
+.createAd a{
+  font-size: 15px;
+  display: inline-block;
+  background-color: rgb(50,50,50);
+  color: white;
+  width: 150px;
+  height: 35px;
+  border-radius: 5px;
+  font-family: helvetica;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 16px;
+}
+.createAd a:hover{
+  background-color: black;
+}
+
+.ads{
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  height: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  justify-content: center;
+}
+
+.ad{
+  width: 300px;
+  height: 280px;
+  background-color: rgb(240,240,240);
+  text-align: center;
+  border: 1px solid rgb(200,200,200);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  position: relative;
+}
+.ad a,p{
+  margin: 5px;
+  text-decoration: none;
+}
+.ad a:hover{
+  color: red;
+}
+.footer{
+  width: 100%;
+  height: 250px;
+  background-color: rgb(240,240,240);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerInformation{
+  width: 300px;
+  height: 150px;
+}
+
+.footerInformation a{
+  font-size: 14px;
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+.social a{
+  display: inline-block;
+}
+
+.footerInformation img{
+  margin: 10px;
+  margin-right: 5px;
+  margin-left: 15px;
+}
+
+.footerInformation a:hover{
+  color: blue;
+}
+
+.newAd{
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+}
+
+.chooseImg{
+  margin-right: 50px;
+  text-align: center;
+}
+
+
+
+.newAd input[type="text"], input[type="number"], select{
+  width: 500px;
+  height: 25px;
+  margin-top: 5px;
+  margin-bottom: 25px;
+}
+input[type="file"]{
+  margin-top: 5px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+textarea{
+  margin-top: 5px;
+  margin-bottom: 25px;
+  resize: vertical;
+}
+
+.newAd input[name="description"]{
+  width: 500px;
+  height: 70px;
+}
+
+.newAd input[type="number"]{
+  width: 250px;
+}
+.newAd input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.newAd input[type="button"], input[type="submit"]{
+  width: 130px;
+  height: 30px;
+  border: none;
+  background-color: rgb(50,50,50);
+  color: white;
+  border-radius: 5px;
+}
+
+.newAd input[type="button"]:hover, input[type="submit"]:hover{
+  background-color: black;
+  cursor: pointer;
+}
+.aboutInformation{
+  width: 40%;
+  border: 1px solid rgb(240,240,240);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px;
+  padding-top: 40px;
+
+}
+#carousel img{
+  border: 1px solid rgb(50,50,50);
+  margin: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#carousel{
+  display:flex;
+}
+#bigImage img{
+  cursor: pointer;
+  border: 1px solid rgb(50,50,50);
+  border-radius: 15px;
+}
+.productFlex{
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.aboutProduct{
+  margin: 70px;
+  display: flex;
+}
+.aboutProductDescription{
+  flex-basis: 42%;
+}
+#price{
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+#prDescription{
+  margin-bottom: 15px;
+}
+
+.windows{
+  background-color: rgb(50,50,50);
+  height: 25px;
+  text-align: center;
+  padding: 20px;
+}
+.windows a{
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  padding: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.windows a:hover{
+  width: 100px;
+  height: 20px;
+  background-color: white;
+  color: black;
+}
+.deleteBtn{
+  cursor: pointer;
+  font-weight: bold;
+  width: 70px;
+  height: 30px;
+  background-color: rgb(50,50,50);
+  border: none;
+  color: white;
+  border-radius: 5px;
+  position: absolute;
+  right: 0;
+}
+.deleteBtn:hover{
+  background-color: white;
+  color: black;
+}
+.addToVip{
+  font-weight: bold;
+  cursor: pointer;
+  width: 100px;
+  height: 30px;
+  background-color: darkorange;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  position: absolute;
+  left: 0;;
+}
+.addToVip:hover{
+  background-color: white;
+  color: black;
+}
+
+
+
+@media only screen and (max-width: 600px){
+  #kuproday{
+    display: none;
+  }
+  .navigation{
+    width: 500px;
+  }
+  input[name="q"]{
+    width: 100px;
+    height: 20px;
+  }
+  input[name=searchButton]{
+    width: 20px;
+    height: 20px;
+    color: white;
+    background-size: 10px;
+  }
+
+  .dropdown{
+    display: none;
+  }
+  .navSecondColumn{
+    width: 180px;
+    overflow: hidden;
+  }
+
+  .ads{
+    height: 3500px;
+  }
+}
